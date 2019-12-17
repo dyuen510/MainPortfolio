@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>David's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            color: darkslategray;
+            font-family: unset;
+
+        }
+
+        .navbar {
+            padding: .8rem;
+        }
+
+        .navbar-nav li {
+            padding-right: 20px;
+        }
+
+        .nav-link {
+            font-size: 1.1em !important;
+        }
+
+        #title {
+            font-family: monospace;
+        }
+
+        a {
+            color: white;
+        }
+
+        #name {
+            color: white;
+            font-size: 50px;
+            font-family: monospace;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+        }
+
+        .carousel-caption h1 {
+            font-size: 500%;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 15px white;
+        }
+
+        .carousel-item{
+            height:600px;
+        }
+
+        .carousel-indicators li {
+            border-radius: 12px;
+            width: 12px;
+            height: 12px;
+            background-color: #404040;
+        }
+
+        .padding {
+            padding-bottom: 2rem;
+        }
+
+        .welcome {
+            width: 75%;
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+
+        .welcome hr {
+            border-top: 2px solid gray;
+            width: 95%;
+            margin-top: .3rem;
+            margin-bottom: 1rem;
+        }
+
+        .card {
+            border-radius: 25px;
+        }
+
+        .fixed-wrap {
+            height: 50vh;
+            background-image: url('images/computer.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position-y: center;
+            background-position-x: calc(50%);
+            opacity: 0.7;
+        }
+
+        #educ1{
+            font-size:40px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 15px white;
+            margin-right:60px;
+        }
+
+        #educ2{
+            color:black;
+            font-size:40px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 15px black;
+            margin-top:40px;
+            margin-left:60px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar content -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top">
+        <div class='container-fluid'>
+            <h1 id='name'> David Yuen</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about" style='color:beige'>About</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#project" style='color:beige'>Projects</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style='color:beige'>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- image slider -->
+    <div id='slides' class='carousel slide' data-ride='carousel'>
+        <ul class='carousel-indicators'>
+            <li data-target='#slides' data-slide-to='0' class='active'></li>
+            <li data-target='#slides' data-slide-to='1'></li>
+            <li data-target='#slides' data-slide-to='2'></li>
+        </ul>
+        <div class='carousel-inner'>
+            <div class='carousel-item active'>
+                <img src='images/apple.jpg'>
+                <div class='carousel-caption'>
+                    <h1 class='display-2' id='title'>Full Stack Web Developer</h1>
+                </div>
+            </div>
+            <div class='carousel-item'>
+                <img src='images/close.jpg'>
+                <div class='carousel-caption'>
+                <h3 class ='display-4' id ='educ1'>Certificate in Full Stack Web Development from UC Berkeley Extension</h3>
+            </div>
+            </div>
+            <div class='carousel-item'>
+                <img src='images/background1.jpg' style='opacity:0.9'>
+                <div class = 'carousel-caption'>
+                    <p class = 'display-2' id = 'educ2'>Bachelor's in Business Administration Concentrating in finance from San Francisco State University</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- about -->
+    <div class='container-fluid padding'>
+        <div class='row welcome text-center'>
+            <div class='col-12'>
+                <h1 class='display-4' id ='about'>About Section</h1>
+            </div>
+            <hr>
+            <div class='col-12'>
+                <p class='lead'>Full stack web developer with a background in Business Administration Concentrating in
+                    Finance and dedication to continuous learning with hands on experiences. Recently earned a
+                    certificate
+                    in Full Stack Web Development from UC Berkeley with developed skills in Javascript, CSS, ReactJS and
+                    databases such as MySQL and MongoDB. Known as an individual with great attention to detail, positive
+                    attitude,
+                    and calm demeanor in high stress situations. With each project my aim is to gain more experiences
+                    and acquire new
+                    skills as well as techniques that will further improve my coding ability. My past projects have
+                    focused mainly at
+                    the full functionality of the applications using MERN which aims to improve productivity of users.
+                    Excited to
+                    leverage my skills in the future to create outstanding user experiences in a fast paced environment
+                    with a
+                    quality driven team.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- skillset -->
+    <div class='container-fluid padding'>
+        <div class='row skills text-center'>
+            <div class='col-12'>
+                <h2 class='display-4'> Applications </h2>
+                <hr>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class='container-fluid padding'>
+        <div class='row text-center padding'>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img src='images/html.png'>
+                <h3>HTML5</h3>
+                <br>
+                <br>
+            </div>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img src='images/css.png'>
+                <h3>CSS/CSS3</h3>
+                <br>
+                <br>
+            </div>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img src='images/bootstrap.png'>
+                <h3>Bootstrap</h3>
+                <br>
+                <br>
+            </div>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img src='images/javascript.png'>
+                <h3>Javascript/Jquery</h3>
+                <br>
+                <br>
+            </div>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img src='images/react.png'>
+                <h3>React</h3>
+                <br>
+                <br>
+            </div>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img src='images/mongodb.png'>
+                <h3>MongoDB</h3>
+                <br>
+                <br>
+            </div>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img src='images/mysql.png'>
+                <h3>MySQL</h3>
+                <br>
+                <br>
+            </div>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img src='images/git.png'>
+                <h3>Git</h3>
+                <br>
+                <br>
+            </div>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img src='images/npm.png'>
+                <h3>Node.js</h3>
+                <br>
+                <br>
+            </div>
+        </div>
+        <hr class='my-4'>
+    </div>
+
+    <!-- <hr class='my-4'> -->
+    <!-- fixed background -->
+    <figure>
+        <div class='fixed-wrap'>
+            <div id='fixed'>
+            </div>
+        </div>
+    </figure>
+
+    <!-- projects header -->
+    <div class='container-fluid padding'>
+        <div class='row welcome text-center'>
+            <div class='col-12'>
+                <h2 class='display-4' id = 'project'>Projects</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <!-- display of projects -->
+    <div class='container-fluid padding'>
+        <div class='row padding'>
+            <div class='col-md-4'>
+                <div class='card'>
+                    <img class='card-img-top' src=''>
+                    <div class='card-body'>
+                        <h4 class='card-title'> Todo List</h4>
+                        <p class='card-text'> Productivity todo list created with firebase authentication</p>
+                        <a href='#' class='btn btn-outline-secondary'>See App</a>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-4'>
+                <div class='card'>
+                    <img class='card-img-top' src=''>
+                    <div class='card-body'>
+                        <h4 class='card-title'> Education Board App</h4>
+                        <p class='card-text'> Productivity todo list created with firebase authentication</p>
+                        <a href='#' class='btn btn-outline-secondary'>See App</a>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-4'>
+                <div class='card'>
+                    <img class='card-img-top' src=''>
+                    <div class='card-body'>
+                        <h4 class='card-title'> Youtube App</h4>
+                        <p class='card-text'> Productivity todo list created with firebase authentication</p>
+                        <a href='#' class='btn btn-outline-secondary'>See App</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- connect -->
+    <div class='container-fluid padding'>
+        <div class='row text-center padding'>
+            <div class='col-12'>
+                <h2>Connect</h2>
+            </div>
+            <div class='col-12 social padding'>
+                <a href='https://www.linkedin.com/in/david-yuen-549bb3b5/'><img src='images/linkedin.png'></a>
+                <a href='https://github.com/dyuen510'><img src='images/github.png'></a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class='container-fluid padding'>
+            <div class='row text-center'>
+                <div class='col-md-12'>
+                    <hr class='light'>
+                    <h3 id='contact'>Contact</h3>
+                    <br>
+                    <p>510-789-8228</p>
+                    <p>Davidyuen0305@gmail.com</p>
+                    <p>San Francisco, California</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
