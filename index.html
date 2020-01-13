@@ -25,23 +25,7 @@
             font-family: unset;
 
         }
-
-        body:before {
-            content: "";
-            display: block;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -10;
-            background: url(photos/2452.jpg) no-repeat center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
+        
         .navbar {
             padding: .8rem;
         }
@@ -145,6 +129,11 @@
 
         .lead {
             text-align: left;
+        }
+        @media (max-width: 767px) {
+            background-image{
+                display:none;
+            }
         }
     </style>
 </head>
