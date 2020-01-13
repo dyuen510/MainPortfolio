@@ -17,12 +17,29 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
             width: 100%;
             color: darkslategray;
             font-family: unset;
 
+        }
+
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(photos/2452.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         .navbar {
@@ -125,11 +142,10 @@
             margin-top: 40px;
             margin-left: 60px;
         }
-        
-        .lead{
-            text-align:left;
-        }
 
+        .lead {
+            text-align: left;
+        }
     </style>
 </head>
 
@@ -154,8 +170,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact" style='color:beige'>Contact</a>
                     </li>
-                    <li class ="nav-item">
-                        <a class="nav-link" href="https://docs.google.com/document/d/1ZEURsh6mLwI5dAYQJaFToMrWIKK4RudXjbH5FLKcxeI/edit?usp=sharing" style='color:beige'>Resume</a>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://docs.google.com/document/d/1ZEURsh6mLwI5dAYQJaFToMrWIKK4RudXjbH5FLKcxeI/edit?usp=sharing"
+                            style='color:beige'>Resume</a>
                     </li>
                 </ul>
             </div>
@@ -186,7 +204,8 @@
             <div class='carousel-item'>
                 <img src='images/background1.jpg' style='opacity:0.9'>
                 <div class='carousel-caption'>
-                    <p class='display-2' id='educ2'>Bachelor's in Business Admin. from San Francisco State University</p>
+                    <p class='display-2' id='educ2'>Bachelor's in Business Admin. from San Francisco State University
+                    </p>
                 </div>
             </div>
         </div>
@@ -201,13 +220,23 @@
             </div>
             <hr>
             <div class='col-12'>
-                <p class='lead'>Front End Web Developer with a background in Business Administration within the finance industry and a dedication to continuous learning with hands on experiences. Known as an individual with great attention to detail, positive attitude, and calm demeanor in high stress situations. I have always enjoyed seeing others learn by doing and really believe in peer to peer teaching. Seeing my parents filled with astonishment over disruptive and new technology made me motivated professionally to be part of a team to create innovative products. <br><br>
+                <p class='lead'>Front End Web Developer with a background in Business Administration within the finance
+                    industry and a dedication to continuous learning with hands on experiences. Known as an individual
+                    with great attention to detail, positive attitude, and calm demeanor in high stress situations. I
+                    have always enjoyed seeing others learn by doing and really believe in peer to peer teaching. Seeing
+                    my parents filled with astonishment over disruptive and new technology made me motivated
+                    professionally to be part of a team to create innovative products. <br><br>
 
 
-                    My past projects have focused mainly at the full functionality of the applications using MERN which aims to improve productivity of users. Multiple projects during my undergrad have prepared me to be a great team player by motivating my group to get started and equally share the workload. <br><br>
-                    
-                    I earned a certificate in Full Stack Web Development from UC Berkeley with developed skills in Javascript, CSS, ReactJS and databases such as MySQL and MongoDB. I am excited to leverage the technical skills with my relationship building skills in the future to create outstanding user experiences in a fast paced environment with a quality driven team.
-                    </p>
+                    My past projects have focused mainly at the full functionality of the applications using MERN which
+                    aims to improve productivity of users. Multiple projects during my undergrad have prepared me to be
+                    a great team player by motivating my group to get started and equally share the workload. <br><br>
+
+                    I earned a certificate in Full Stack Web Development from UC Berkeley with developed skills in
+                    Javascript, CSS, ReactJS and databases such as MySQL and MongoDB. I am excited to leverage the
+                    technical skills with my relationship building skills in the future to create outstanding user
+                    experiences in a fast paced environment with a quality driven team.
+                </p>
             </div>
         </div>
     </div>
@@ -309,10 +338,12 @@
                     <img class='card-img-top' src='images/todo.png' height='300px'>
                     <div class='card-body'>
                         <h4 class='card-title'> Todo List</h4>
-                        <p class='card-text'> Productivity todo list created with firebase authentication and real time database. 
+                        <p class='card-text'> Productivity todo list created with firebase authentication and real time
+                            database.
                             In addition used several APIs to query for news, books and events.
                         </p>
-                        <a href='https://productivity-todolist.herokuapp.com/login.html?mode=select' class='btn btn-outline-secondary'>See App</a>
+                        <a href='https://productivity-todolist.herokuapp.com/login.html?mode=select'
+                            class='btn btn-outline-secondary'>See App</a>
                         <a href='https://github.com/dyuen510/project1' class='btn btn-outline-secondary'>Github Repo</a>
 
                     </div>
@@ -323,9 +354,12 @@
                     <img class='card-img-top' src='images/educ.png' height='300px'>
                     <div class='card-body'>
                         <h4 class='card-title'> Education Board App</h4>
-                        <p class='card-text'> App created with express.js and mysql as the database. Main functions of the app is to allow teachers and administration of the school to connect with parents and inform parents of upcoming activities or announcements.</p>
+                        <p class='card-text'> App created with express.js and mysql as the database. Main functions of
+                            the app is to allow teachers and administration of the school to connect with parents and
+                            inform parents of upcoming activities or announcements.</p>
                         <a href='#' class='btn btn-outline-secondary'>Under Construction</a>
-                        <a href='https://github.com/Wyvern25/educationBoard' class='btn btn-outline-secondary'>Github Repo</a>
+                        <a href='https://github.com/Wyvern25/educationBoard' class='btn btn-outline-secondary'>Github
+                            Repo</a>
 
                     </div>
                 </div>
@@ -335,9 +369,12 @@
                     <img class='card-img-top' src='images/utube.png' height='300px'>
                     <div class='card-body'>
                         <h4 class='card-title'> Utube App</h4>
-                        <p class='card-text'> Youtube video app created with javascript framework react, express.js, mongodb as the database/authentication with jwt tokens, and socket.io for the real time chat.</p>
+                        <p class='card-text'> Youtube video app created with javascript framework react, express.js,
+                            mongodb as the database/authentication with jwt tokens, and socket.io for the real time
+                            chat.</p>
                         <a href='https://utube-project.herokuapp.com/' class='btn btn-outline-secondary'>See App</a>
-                        <a href='https://github.com/dyuen510/youtubestream' class='btn btn-outline-secondary'>Github Repo</a>
+                        <a href='https://github.com/dyuen510/youtubestream' class='btn btn-outline-secondary'>Github
+                            Repo</a>
 
                     </div>
                 </div>
