@@ -16,6 +16,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
         <link rel="stylesheet" href="style.css">
 </head>
 
@@ -67,15 +69,17 @@
             <div class='carousel-item'>
                 <img src='images/close.jpg'>
                 <div class='carousel-caption'>
-                    <h3 id='educ1'>Certificate in Full Stack Web Development from UC Berkeley
-                        Extension</h3>
+                    <h3 id='educ1'>Certificate in Full Stack Web Development from UC Berkeley Extension</h3>
+                </br>
+                </br>
+                    <p id = 'skillset'> HTML, CSS, Javascript, Jquery, Express, MySQL, Firebase, MongoDB, React, Node.JS, Git, and Bootstrap.</p>
                 </div>
             </div>
             <div class='carousel-item'>
                 <img src='images/background1.jpg' style='opacity:0.9'>
                 <div class='carousel-caption'>
-                    <p id='educ2'>Bachelor's in Business Administration from San Francisco State University
-                    </p>
+                    <p id='educ2'>Bachelor's in Business Administration from San Francisco State University</p>
+                    <div id = 'chart'></div>
                 </div>
             </div>
         </div>
@@ -254,8 +258,7 @@
                         <h4 class='card-title'> Bamazon</h4>
                         <p class='card-text'> Similar to Amazon, Bamazon is a online store front CLI app that shows customer's view as well as manager's view of store's inventory and sales. My Bamazon app is coffee shop themed and uses MySQL as the database.</p>
                         <a href='https://github.com/dyuen510/bamazon' class='btn btn-outline-secondary'>See More</a>
-                        <a href='https://github.com/dyuen510/bamazon' class='btn btn-outline-secondary'>Github
-                            Repo</a>
+                        <a href='https://github.com/dyuen510/bamazon' class='btn btn-outline-secondary'>Github Repo</a>
 
                     </div>
                 </div>
@@ -292,6 +295,30 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <script>
+    anychart.onDocumentReady(function(){
+
+        
+        var data = [
+            {x: "Marketing", value: 100},
+            {x: "Finance", value: 100},
+            {x: "Information Systems", value: 100},
+            {x: "Financial Accounting", value: 100},
+            {x: "Management", value: 100},
+            {x: "Business Seminars", value: 100},
+        ];
+
+        var chart = anychart.pie();
+
+        chart.title('Undergrad Courses in Business');
+
+        chart.data(data);
+        chart.palette(anychart.palettes.sea);
+        chart.container('chart');
+        chart.draw();
+    })
+</script>
 
 </body>
 
