@@ -113,6 +113,7 @@ a {
 .lead {
     text-align: left;
     margin-left:-70px;
+    font-size:20px;
     /* margin-right:-70px; */
 }
 
@@ -132,7 +133,6 @@ footer{
         font-size:13px;
         margin-left:-55px;
         margin-right:-55px;
-        /* margin:1px; */
     }
     .fixed-wrap{
     background-image:none;
