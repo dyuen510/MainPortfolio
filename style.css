@@ -116,6 +116,15 @@ a {
     /* margin-right:-70px; */
 }
 
+footer{
+    background-color:darkslategray;
+    color:white;
+}
+
+#copyright{
+    font-size:12px;
+}
+
 
 
 @media (max-width: 767px) {
