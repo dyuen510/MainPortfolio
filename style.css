@@ -113,12 +113,18 @@ a {
 .lead {
     text-align: left;
     margin-left:-70px;
-    margin-right:-70px;
+    /* margin-right:-70px; */
 }
 
 
 
 @media (max-width: 767px) {
+    .lead{
+        font-size:13px;
+        margin-left:-55px;
+        margin-right:-55px;
+        /* margin:1px; */
+    }
     .fixed-wrap{
     background-image:none;
     }
@@ -131,6 +137,10 @@ a {
     }
     #educ2{
         font-size:25px;
+    }
+    #bioPic{
+        width:150px;
+        height:200px;
     }
 }
 
@@ -153,4 +163,5 @@ a {
     text-transform: uppercase;
     text-shadow: 1px 1px 15px white;
 }
+
 
