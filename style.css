@@ -17,7 +17,7 @@ body {
 }
 
 .nav-link {
-    font-size: 1.1em !important;
+    font-size: 1.1em;
 }
 
 #title {
@@ -126,6 +126,9 @@ footer{
     font-size:12px;
 }
 
+#contact{
+    padding-top:15px;
+}
 
 
 @media (max-width: 767px) {
@@ -167,10 +170,42 @@ footer{
 }
 
 #skillset{
-    animation: 5s infinite alternate slidein;
     font-size:20px;
     text-transform: uppercase;
     text-shadow: 1px 1px 15px white;
 }
 
+
+/* media queries */
+@media (min-width: 50px) and (max-width: 375px){
+    #name{
+        font-size:25px;
+    }
+
+    #slides{
+        display: none;
+    }
+
+    .display-4{
+        font-size:20px;
+    }
+
+    h3{
+        font-size:18px;
+    }
+
+    p{
+        font-size:12px;
+    }
+}
+
+@media (min-width: 425px){
+    #educ1{
+        font-size: 30px;
+        margin:0px;
+    }
+    #skillset{
+        font-size:15px;
+    }
+}
 
